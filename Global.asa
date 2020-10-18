@@ -1,0 +1,9 @@
+<SCRIPT LANGUAGE="VBScript" RUNAT="Server">
+Sub Application_OnStart()   
+	Application("PC") = "Provider=sqloledb;Data Source=DESKTOP-D9PLM9D\SQLEXPRESS;Initial Catalog=RESTAURANT;User Id=sa;Password=FIGI2020"
+End Sub
+Sub Session_OnStart
+	Session("login") = ""
+	Session("idAdmin") = "0"
+End Sub
+</SCRIPT>

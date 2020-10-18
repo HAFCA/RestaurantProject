@@ -1,0 +1,18 @@
+USE [RESTAURANT]
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+Create PROCEDURE [dbo].[ps_Supprimer_Menu_TMENU]
+	@IdMenu as INT
+	
+AS
+BEGIN
+	Delete 
+	FROM
+		TMENUS
+	Where IdMenu = @IdMenu
+
+	
+END

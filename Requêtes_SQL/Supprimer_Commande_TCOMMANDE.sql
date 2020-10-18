@@ -1,0 +1,16 @@
+USE [RESTAURANT]
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+Create PROCEDURE [dbo].[ps_Supprimer_Commande_TCOMMANDES]
+	@IdCommande as INT
+As
+BEGIN
+	DELETE 
+	FROM TCOMMANDES 
+	WHERE 
+		IdCommande  = @IdCommande
+	
+END
